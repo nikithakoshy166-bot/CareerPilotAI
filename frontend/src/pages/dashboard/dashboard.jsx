@@ -51,7 +51,7 @@ function Dashboard() {
   const saveProfile = async () => {
     try {
       const response = await fetch(
-        `https://careerpilotai-4y1k.onrender.com/profile/create/${userId}`
+        `https://careerpilotai-4y1k.onrender.com/profile/create/${userId}`,
         {
           method: "POST",
           headers: {
