@@ -13,7 +13,10 @@ from routers.github_router import router as github_router
 app = FastAPI(title="CareerPilot AI")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://career-pilot-ai-rust-two.vercel.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
