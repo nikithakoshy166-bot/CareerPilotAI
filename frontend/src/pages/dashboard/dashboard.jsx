@@ -30,7 +30,7 @@ function Dashboard() {
   const [resumeUploaded, setResumeUploaded] = useState(false);
 
   useEffect(() => {
-    fetch(`https://careerpilotai-4y1k.onrender.com/profile/create/123/profile/${userId}`)
+    fetch(`https://careerpilotai-4y1k.onrender.com/profile/${userId}`)
         .then((res) => res.json())
         .then((data) => {
             if (!data.message) {
@@ -40,7 +40,7 @@ function Dashboard() {
         .catch((err) => console.log(err));
 }, [userId]);
   useEffect(() => {
-    fetch(`https://careerpilotai-4y1k.onrender.com/profile/create/123/analytics/career-score/${userId}`)
+    fetch(`https://careerpilotai-4y1k.onrender.com/analytics/career-score/${userId}`)
         .then((res) => res.json())
         .then((data) => {
             setCareerScore(data.career_score);
@@ -51,7 +51,7 @@ function Dashboard() {
   const saveProfile = async () => {
     try {
       const response = await fetch(
-        `https://careerpilotai-4y1k.onrender.com/profile/create/123/profile/create/${userId}`,
+        `https://careerpilotai-4y1k.onrender.com/profile/create/${userId}`
         {
           method: "POST",
           headers: {
