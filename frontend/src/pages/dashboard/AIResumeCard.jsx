@@ -18,7 +18,7 @@ function AIResumeCard() {
     setLoading(true);
     setError("");
 
-    fetch(`https://careerpilotai-4y1k.onrender.com/profile/create/123/resume/ai-analysis/${userId}`)
+    fetch(`https://careerpilotai-4y1k.onrender.com/resume/ai-analysis/${userId}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error("Failed to get AI analysis");

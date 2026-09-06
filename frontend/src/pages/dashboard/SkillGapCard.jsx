@@ -53,7 +53,7 @@ function SkillGapCard({ profile }) {
     useEffect(() => {
         if (!userId) return;
 
-        fetch(`https://careerpilotai-4y1k.onrender.com/profile/create/123/resume/analyze/${userId}`)
+        fetch(`https://careerpilotai-4y1k.onrender.com/resume/analyze/${userId}`)
             .then((res) => res.json())
             .then((data) => {
 
