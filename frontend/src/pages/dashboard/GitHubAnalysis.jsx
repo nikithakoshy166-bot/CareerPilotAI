@@ -20,7 +20,7 @@ function GitHubAnalysis() {
 
         try {
             const response = await fetch(
-                `https://careerpilotai-4y1k.onrender.com/profile/create/123/github/analyze/${username.trim()}`
+                `https://careerpilotai-4y1k.onrender.com/github/analyze/${username.trim()}`
             );
 
             const result = await response.json();

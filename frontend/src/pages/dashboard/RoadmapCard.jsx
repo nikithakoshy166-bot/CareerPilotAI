@@ -15,7 +15,7 @@ function RoadmapCard({ refresh }) {
             return;
         }
 
-        fetch(`https://careerpilotai-4y1k.onrender.com/profile/create/123/resume/roadmap/${userId}`)
+        fetch(`https://careerpilotai-4y1k.onrender.com/resume/roadmap/${userId}`)
             .then((res) => res.json())
             .then((data) => setRoadmap(data))
             .catch((err) => {

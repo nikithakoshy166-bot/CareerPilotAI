@@ -10,7 +10,7 @@ function ResumeUpload({ onUploadSuccess }) {
 
     // Check if the user already has a resume
     useEffect(() => {
-        fetch(`https://careerpilotai-4y1k.onrender.com/profile/create/123/resume/latest/${userId}`)
+        fetch(`https://careerpilotai-4y1k.onrender.com/resume/latest/${userId}`)
             .then((res) => res.json())
             .then((data) => {
                 if (data.uploaded) {
@@ -33,7 +33,7 @@ function ResumeUpload({ onUploadSuccess }) {
 
         try {
             const response = await fetch(
-                `https://careerpilotai-4y1k.onrender.com/profile/create/123/resume/upload/${userId}`,
+                `https://careerpilotai-4y1k.onrender.com/resume/upload/${userId}`,
                 {
                     method: "POST",
                     body: formData,
