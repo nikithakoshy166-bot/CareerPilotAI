@@ -14,7 +14,7 @@ function Register() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/auth/register", {
+      const response = await fetch("https://careerpilotai-4y1k.onrender.com/profile/create/123/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -16,7 +16,7 @@ function ProfileCard({ profile }) {
     const handleSave = async () => {
         try {
             const response = await fetch(
-                `http://127.0.0.1:8000/profile/create/${userId}`,
+                `https://careerpilotai-4y1k.onrender.com/profile/create/123/profile/create/${userId}`,
                 {
                     method: "POST",
                     headers: {

@@ -12,7 +12,7 @@ function ResumeAnalysisCard({ refresh }) {
 
         setLoading(true);
 
-        fetch(`http://127.0.0.1:8000/resume/analyze/${userId}`)
+        fetch(`https://careerpilotai-4y1k.onrender.com/profile/create/123/resume/analyze/${userId}`)
             .then((res) => res.json())
             .then((data) => {
                 setAnalysis(data);
